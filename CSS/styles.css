@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Verdana, Tahoma, sans-serif;    
+    
+    
+}
+
+/*Arreglos para el Menu de navegacion*/
+
+header {
+    background-color: #384E94;
+    color: #FFFFFD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    
+    
+
+}
+
+.nav-flex{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px;
+    
+    
+    
+    
+}
+
+/*gracias a la IA pude sacar la linea azul del link*/
+.nav-flex a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del texto definido en el nav */
+}
+
+/*titulos de la gerencia operativa*/
+
+.section-h2{
+    text-align:center;
+    color: #FFFFFD;
+    background-color: #002656;
+    padding: 2% 2%; 
+}
+
+
+
+/*Texto de bienvida, fija la mision del sitio*/
+
+.texto-inicial{
+    text-align: center;
+    background-color: rgb(251, 221, 221);
+    color: #616160;
+    border-radius: 15px;
+    padding: 2%;
+
+}
+
+
+/* cajitas del acciones*/
+
+.flex-cajitas{
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 1%;
+    justify-content: space-between;
+    gap: 7px;
+           
+
+}
+
+.item-hijos{
+    border: 2px solid black;
+    text-align: center;
+    flex:1
+    
+}
+
+.tit-item{
+    
+    font-size: medium;
+    font-weight: 500;
+    padding: 1%;
+    
+
+}
+
+
+.svg{
+    width: 100px;
+    height: 100px;
+}
+
+.btn-item{
+    border-radius: 8px;
+    background-color: #002656;
+    color: #FFFFFD;
+    width: 80px;
+    height: 25px;
+    display: block ;
+    margin:auto;  
+    
+}
+
+/* division de secciones*/
+hr{
+    margin: auto;
+    border: 1px solid blue;
+}
+
+/* no se utiliza para no recargar el sitio*/
+.imagen_fondo{
+
+    background-image: url("./media/img/imagen\ de\ fondo\ para.png");
+}
+
+
+/*estilos para el formulario*/
+.title-form{
+    text-align: center;
+    font-family: roboto Verdana, Tahoma, sans-serif;
+    background-color: #002656;
+    color: #616160;
+}
+
+.formulario {
+    border: #002656 solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1%;
+    background-color: rgba(56, 78, 148, 0.1);
+    font-family: Roboto, Verdana, Tahoma, sans-serif ;
+    
+}
+
+.boton{
+    border-radius: 10px;
+    background-color: #002656;
+    color: #FFFFFD;
+    width: 47px;
+    height: 25px;
+    
+        
+}
+
+.boton:hover{
+    color: #002656;
+    background-color: #FFFFFD;
+}
+
+/* seccion de mapas*/
+.section-mapas{
+    background-color: #959490;
+    color: #002656;
+    padding: 1%;
+    margin: 0%;
+
+}
+.mapa-contenier{
+    display: flex;
+    justify-content:center;
+    
+}
+
+.titulo-mapa{
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    font-weight: 800;
+   
+}
+
+.tit-mapa{
+    font-size: 20px;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    color: #384E94;
+    font-weight: 500;
+}
+.mapas{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    
+ 
+}
+
+iframe {
+    width: 100%;
+    height: 250px; /* Puedes ajustar el valor según el diseño */
+    border: 0;
+}
+
+
+
+/* pie de pagina*/
+
+footer{
+    background-color: #002656;
+    color: #fffffd;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.flex-footer-div {
+    min-width: 150px;
+    text-align: center;
+    
+    
+}
+
+.iconos-redes{
+    
+    margin: 2%;
+    padding: 1%;
+}
+
+
+
+   
+
+/* boton de whasat - falta desarrolar el link*/
+.fixed{
+    
+    position: fixed;
+    color: black;
+    bottom: 10%;
+    right: 5%;
+    
+}
+
+/* Medias queries para responsivo*/
+@media only screen and (max-width:500px) {
+    header {
+        flex-direction: column;
+    }
+    
+}
